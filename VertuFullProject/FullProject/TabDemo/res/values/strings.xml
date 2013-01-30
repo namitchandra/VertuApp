@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vertu and Ferrari</string>
+    <string name="hello_world"></string>
+    <string name="menu_settings">Settings</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="register"><u><b>See full terms and conditions for details.</b></u></string>
+    <string name="Dealerstatus">Ferrari Approved DealerShip</string>
+    <string name="ServiceStatus">Ferrari Approved Services</string>
+    <string name="Deler_Service">Ferrari Approved DealerShip, Services</string>
+    <string name="Deler_Service_mact">Ferrari Approved DealerShip, Services, merchandising</string>
+    <string name="Deler_mact">Ferrari Approved DealerShip, merchandising</string>
+    <string name="Service_mact">Ferrari Approved Services, merchandising</string>
+    <string name="mact">Ferrari Approved merchandising</string>
+    <string name="ferrari_partnership_text">The maker of the world\'s finest mobile phones and the legendary Italian car marque: two iconic brands united by a shared passion for design, craftsmanship and performance. In their pursuit of excellence Vertu and Ferrari have been creating some of the most thrilling mobile phones and a range of exclusive services giving handset owners access to the exciting world of Ferrari.</string>
+<string name="ferrari_partnership_Heading">Vertu &amp; Ferrari</string>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/activityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_below="@+id/activityname"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/carImageView"
+            android:layout_width="280dp"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:id="@+id/imageBorder"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:src="@drawable/articleimageback" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/createdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_below="@+id/frame"
+        android:text="TextView"
+       
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createdate"
+        android:layout_below="@+id/createdate"
+        android:text="TextView"
+        
+        android:layout_marginTop="3dp"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enddate"
+       android:layout_marginTop="5dp"
+        android:layout_below="@+id/enddate" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enddate"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </ScrollView>
+
+</RelativeLayout>
