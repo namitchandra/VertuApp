@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.05"
+        android:text="About"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.05"
+        android:text="Vertu Ferrari Application version 1.0 "
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+    <TextView
+       
+        android:layout_width="wrap_content"
+        android:id="@+id/term"
+        android:layout_height="54dp"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.05"
+        android:linksClickable="false"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_above="@+id/term"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="0.05"
+        android:text="Copyright © Vertu 2013. All rights reserved"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    
+    
+     <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="fill_parent"
+          android:layout_height="45dp"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/footer_bg"
+          android:orientation="vertical" >
+
+          <FrameLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_gravity="center_vertical"
+            
+              android:layout_weight="2.04" >
+
+              <ImageView
+                  android:id="@+id/bell_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:src="@drawable/bell_button" />
+          </FrameLayout>
+      </LinearLayout>
+      
+      <com.example.tabdemo.RibbonMenuView
+        android:id="@+id/ribbonMenuView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+     
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:id="@+id/frame"
+        android:layout_centerVertical="true"
+       
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            
+            android:layout_alignParentTop="true"
+            android:src="@drawable/image_for_empty_url" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            
+            android:layout_alignParentTop="true"
+            android:src="@drawable/imageshadow" />
+        <ImageView
+            android:id="@+id/imageBorder"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+           
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:src="@drawable/img_bdr" />
+    </FrameLayout>
+
+  
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/opus"
+        android:layout_toRightOf="@+id/frame"
+        android:text="TextView"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/opus"
+        android:layout_toRightOf="@+id/frame"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/opus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+       />
+
+</RelativeLayout>

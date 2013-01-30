@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:background="@drawable/footer_bg"
+        android:layout_alignParentBottom="true" >
+
+        <FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow_images" />
+        
+         <ImageView
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/right_arrow_image" />
+
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:src="@drawable/bell_button" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+   
+
+
+</RelativeLayout>

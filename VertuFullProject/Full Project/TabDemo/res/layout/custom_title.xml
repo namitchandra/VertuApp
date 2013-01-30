@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/c_title"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/header1"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_with_arrow" />
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ferari" />
+
+</RelativeLayout>
